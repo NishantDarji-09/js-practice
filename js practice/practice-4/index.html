@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice - 4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="logo">Website </h1>
+            <ul class="ul">
+                <li class="li"><a href="#" class="home">Home</a></li>
+                <li class="li"><a href="#todo-section" class="todo">Todo</a></li>
+                <li class="li"><a href="#signup-section" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="manage">
+            <h2 class="manageTask" id="manageTask">Manage Your Tasks </h2>
+            <button class="btn btn-headline">Learn More</button>
+        </div>
+    </header>
+
+
+    <section class="todo-section container" id="todo-section">
+        <h2 class="todo-h2">Your Today's Plan?</h2>
+
+    <div class="adding-todo">
+        <form class="todo-form">
+            <input type="text" name="todo-text" id="todo-text" class="todo-text" placeholder="Add Todo" />
+            <input type="submit" id="add-todo" class="add-todo" value="Add Todo">
+        </form>
+        <ul class="todo-list">
+            <!-- <li>
+                <span class="text">Write here!</span>
+                <div class="todo-buttons">
+                    <button class="todo-btn done">Done</button>
+                    <button class="todo-btn remove">Remove</button>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    </section>
+
+
+    <section class="signup-section container" id="signup-section">
+        <h2 class="signup-h2">Sign Up</h2>
+        <form class="signup-form" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" autocomplete="on" />
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" autocomplete="on" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" />
+            </div>
+            <div class="form-group">
+                <label for="about">About Yourself</label>
+                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-signup">Submit</button>
+        </form>
+    </section>
+
+
+</body>
+</html>
